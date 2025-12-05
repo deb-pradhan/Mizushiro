@@ -37,9 +37,9 @@ export const CardHeader = ({ title }: { title: string }) => (
   </div>
 );
 
-export const SlideSection = ({ children, className, id }: { children: React.ReactNode; className?: string; id?: string }) => {
+export const SlideSection = ({ children, className, id, style }: { children: React.ReactNode; className?: string; id?: string; style?: React.CSSProperties }) => {
   return (
-    <section id={id} className={cn("min-h-[calc(100vh-48px)] w-full px-4 py-12 md:px-8 md:py-16 flex flex-col justify-center", className)}>
+    <section id={id} style={style} className={cn("min-h-[calc(100vh-48px)] w-full px-4 py-12 md:px-8 md:py-16 flex flex-col justify-center", className)}>
       <div className="max-w-6xl mx-auto w-full">
          {children}
       </div>
