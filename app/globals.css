@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --surface-base: #E6E6E6;
+  --surface-card: #FFFFFF;
+  --ink-primary: #000000;
+  --ink-secondary: #555555;
+  --ink-tertiary: #999999;
+  --border-grid: #BFBFBF;
+}
+
+@theme inline {
+  --color-surface-base: var(--surface-base);
+  --color-surface-card: var(--surface-card);
+  --color-ink-primary: var(--ink-primary);
+  --color-ink-secondary: var(--ink-secondary);
+  --color-ink-tertiary: var(--ink-tertiary);
+  --color-border-grid: var(--border-grid);
+  --font-sans: var(--font-inter);
+  --font-serif-jp: var(--font-noto-serif-jp);
+}
+
+body {
+  background-color: var(--surface-base);
+  color: var(--ink-primary);
+}
+
+/* Custom Utilities for Mizushiro Design */
+
+/* Bento cell borders */
+.bento-cell {
+  position: relative;
+  background-color: transparent;
+  border-right: 1px solid var(--border-grid);
+  border-bottom: 1px solid var(--border-grid);
+}
+
+/* The crosshair decorator at bottom-right corner of each cell */
+.bento-cell::after {
+  content: "+";
+  position: absolute;
+  bottom: -0.55em; 
+  right: -0.4em; 
+  color: var(--ink-secondary);
+  background: var(--surface-base); 
+  font-family: monospace;
+  font-size: 12px;
+  line-height: 1;
+  z-index: 10;
+  pointer-events: none;
+  padding: 2px;
+}
+
+/* Hide the + on the very last cell in a grid to keep the corner clean */
+.bento-cell:last-child::after {
+  /* Keep it visible - the + should show at all intersections */
+}
+
+/* Sharp corners for cards and UI elements per design system */
+.bento-cell,
+button,
+input,
+select,
+textarea {
+  border-radius: 0 !important;
+}
