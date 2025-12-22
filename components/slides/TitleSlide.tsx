@@ -10,7 +10,7 @@ export const TitleSlide = () => {
         <BentoCell className="col-span-12 relative overflow-hidden py-20 md:py-32 min-h-[60vh] justify-center">
            {/* Background Image */}
            <div 
-             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
+             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-15"
              style={{ backgroundImage: 'url(/image.png)' }}
            />
            {/* Red gradient overlay */}
