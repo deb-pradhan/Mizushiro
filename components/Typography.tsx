@@ -7,31 +7,31 @@ function cn(...inputs: ClassValue[]) {
 }
 
 export const DisplayHeader = ({ className, children }: React.HTMLAttributes<HTMLHeadingElement>) => (
-  <h1 className={cn("text-[36px] md:text-[48px] font-normal leading-[1.1] text-ink-primary tracking-tight", className)}>
+  <h1 className={cn("text-[36px] md:text-[48px] font-light leading-[1.0] text-ink-primary tracking-tight", className)}>
     {children}
   </h1>
 );
 
 export const CardTitle = ({ className, children }: React.HTMLAttributes<HTMLHeadingElement>) => (
-  <h2 className={cn("text-[14px] md:text-[16px] font-bold uppercase tracking-wide text-ink-primary", className)}>
+  <h2 className={cn("text-[14px] md:text-[16px] font-medium uppercase tracking-wider text-ink-primary", className)}>
     {children}
   </h2>
 );
 
 export const DataHuge = ({ className, children }: React.HTMLAttributes<HTMLSpanElement>) => (
-  <span className={cn("text-[32px] md:text-[40px] font-medium tracking-tighter text-ink-primary leading-none", className)}>
+  <span className={cn("text-[32px] md:text-[40px] font-normal tracking-tighter text-ink-primary leading-none", className)}>
     {children}
   </span>
 );
 
 export const DataLarge = ({ className, children }: React.HTMLAttributes<HTMLSpanElement>) => (
-  <span className={cn("text-[24px] font-semibold text-ink-primary tracking-tight", className)}>
+  <span className={cn("text-[24px] font-normal text-ink-primary tracking-tight", className)}>
     {children}
   </span>
 );
 
 export const Label = ({ className, children }: React.HTMLAttributes<HTMLParagraphElement>) => (
-  <p className={cn("text-[12px] font-medium text-ink-secondary uppercase tracking-wider", className)}>
+  <p className={cn("text-[11px] font-medium text-ink-secondary uppercase tracking-[0.06em]", className)}>
     {children}
   </p>
 );
@@ -43,8 +43,7 @@ export const Body = ({ className, children }: React.HTMLAttributes<HTMLParagraph
 );
 
 export const MicroLabel = ({ className, children }: React.HTMLAttributes<HTMLSpanElement>) => (
-  <span className={cn("text-[10px] font-normal uppercase tracking-wider text-ink-secondary", className)}>
+  <span className={cn("text-[10px] font-medium uppercase tracking-[0.06em] text-ink-secondary", className)}>
     {children}
   </span>
 );
-

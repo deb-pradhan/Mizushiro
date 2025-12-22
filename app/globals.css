@@ -1,27 +1,60 @@
 @import "tailwindcss";
 
 :root {
-  --surface-base: #E6E6E6;
-  --surface-card: #FFFFFF;
-  --ink-primary: #000000;
-  --ink-secondary: #555555;
-  --ink-tertiary: #999999;
-  --border-grid: #BFBFBF;
+  /* Surface (Charcoal Scale) */
+  --surface-canvas: #0A0A0A;
+  --surface-card: #141414;
+  --surface-subtle: #1C1C1C;
+  --surface-elevated: #242424;
+
+  /* Ink (Light on Dark) */
+  --ink-primary: #F5F5F5;
+  --ink-secondary: #A3A3A3;
+  --ink-tertiary: #666666;
+  --ink-on-accent: #FFFFFF;
+
+  /* Accent (Dark Red) */
+  --accent-main: #9B1C1C;
+  --accent-hover: #B52525;
+  --accent-subtle: #2A1515;
+  --accent-glow: rgba(155, 28, 28, 0.3);
+
+  /* Functional Signals */
+  --signal-error: #EF4444;
+  --signal-warning: #F59E0B;
+  --signal-success: #10B981;
+
+  /* Borders */
+  --border-grid: #2A2A2A;
+  --border-element: #363636;
+  --border-accent: #9B1C1C;
 }
 
 @theme inline {
-  --color-surface-base: var(--surface-base);
+  --color-surface-canvas: var(--surface-canvas);
   --color-surface-card: var(--surface-card);
+  --color-surface-subtle: var(--surface-subtle);
+  --color-surface-elevated: var(--surface-elevated);
   --color-ink-primary: var(--ink-primary);
   --color-ink-secondary: var(--ink-secondary);
   --color-ink-tertiary: var(--ink-tertiary);
+  --color-ink-on-accent: var(--ink-on-accent);
+  --color-accent-main: var(--accent-main);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-subtle: var(--accent-subtle);
+  --color-accent-glow: var(--accent-glow);
   --color-border-grid: var(--border-grid);
+  --color-border-element: var(--border-element);
+  --color-border-accent: var(--border-accent);
+  --color-signal-error: var(--signal-error);
+  --color-signal-warning: var(--signal-warning);
+  --color-signal-success: var(--signal-success);
   --font-sans: var(--font-inter);
   --font-serif-jp: var(--font-noto-serif-jp);
 }
 
 body {
-  background-color: var(--surface-base);
+  background-color: var(--surface-canvas);
   color: var(--ink-primary);
 }
 
@@ -30,7 +63,7 @@ body {
 /* Bento cell borders */
 .bento-cell {
   position: relative;
-  background-color: transparent;
+  background-color: var(--surface-card);
   border-right: 1px solid var(--border-grid);
   border-bottom: 1px solid var(--border-grid);
 }
@@ -41,19 +74,14 @@ body {
   position: absolute;
   bottom: -0.55em; 
   right: -0.4em; 
-  color: var(--ink-secondary);
-  background: var(--surface-base); 
+  color: var(--accent-main);
+  background: var(--surface-canvas); 
   font-family: monospace;
   font-size: 12px;
   line-height: 1;
   z-index: 10;
   pointer-events: none;
   padding: 2px;
-}
-
-/* Hide the + on the very last cell in a grid to keep the corner clean */
-.bento-cell:last-child::after {
-  /* Keep it visible - the + should show at all intersections */
 }
 
 /* Sharp corners for cards and UI elements per design system */
@@ -63,4 +91,26 @@ input,
 select,
 textarea {
   border-radius: 0 !important;
+}
+
+/* Pill buttons (organic contrast) */
+.btn-pill {
+  border-radius: 999px !important;
+}
+
+/* Red accent hover utilities */
+.hover-accent:hover {
+  background-color: var(--accent-subtle) !important;
+  border-color: var(--accent-main) !important;
+}
+
+/* Red glow effect for emphasis */
+.accent-glow {
+  box-shadow: 0 0 20px var(--accent-glow), 0 0 40px var(--accent-glow);
+}
+
+/* Data highlight with red */
+.data-accent {
+  color: var(--accent-main);
+  text-shadow: 0 0 30px var(--accent-glow);
 }

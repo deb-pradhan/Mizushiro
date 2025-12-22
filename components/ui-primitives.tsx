@@ -33,17 +33,16 @@ export const BentoCell = ({
 export const CardHeader = ({ title }: { title: string }) => (
   <div className="flex justify-between items-start mb-4 w-full">
     <CardTitle>{title}</CardTitle>
-    <ArrowUpRight className="w-4 h-4 text-ink-primary" strokeWidth={1.5} />
+    <ArrowUpRight className="w-4 h-4 text-accent-main" strokeWidth={1.5} />
   </div>
 );
 
 export const SlideSection = ({ children, className, id, style }: { children: React.ReactNode; className?: string; id?: string; style?: React.CSSProperties }) => {
   return (
-    <section id={id} style={style} className={cn("min-h-[calc(100vh-48px)] w-full px-4 py-12 md:px-8 md:py-16 flex flex-col justify-center", className)}>
+    <section id={id} style={style} className={cn("min-h-[calc(100vh-48px)] w-full px-4 py-12 md:px-8 md:py-16 flex flex-col justify-center bg-surface-canvas", className)}>
       <div className="max-w-6xl mx-auto w-full">
          {children}
       </div>
     </section>
   );
 };
-

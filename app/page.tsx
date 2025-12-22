@@ -10,8 +10,8 @@ import { InsightSlide } from "@/components/slides/InsightSlide";
 import { BusinessSlide } from "@/components/slides/BusinessSlide";
 import { MarketSlide } from "@/components/slides/MarketSlide";
 import { TeamSlide } from "@/components/slides/TeamSlide";
-import { AskSlide } from "@/components/slides/AskSlide";
-import { TokenomicsSlide } from "@/components/slides/TokenomicsSlide";
+import { RoadmapSlide } from "@/components/slides/RoadmapSlide";
+import { ClosingSlide } from "@/components/slides/ClosingSlide";
 
 export default function Home() {
   const slides = [
@@ -19,13 +19,13 @@ export default function Home() {
     { id: "problem", title: "The Problem", component: <ProblemSlide /> },
     { id: "validation", title: "Validation", component: <ValidationSlide /> },
     { id: "solution", title: "Solution", component: <SolutionSlide /> },
-    { id: "insight", title: "Why Us", component: <InsightSlide /> },
     { id: "market", title: "Market Size", component: <MarketSlide /> },
     { id: "business", title: "Business Model", component: <BusinessSlide /> },
+    { id: "insight", title: "Why Us, Why Now", component: <InsightSlide /> },
     { id: "traction", title: "Traction", component: <TractionSlide /> },
     { id: "team", title: "Team", component: <TeamSlide /> },
-    { id: "ask", title: "The Ask", component: <AskSlide /> },
-    { id: "tokenomics", title: "Tokenomics", component: <TokenomicsSlide /> },
+    { id: "roadmap", title: "Roadmap", component: <RoadmapSlide /> },
+    { id: "closing", title: "Connect", component: <ClosingSlide /> },
   ];
 
   return (
