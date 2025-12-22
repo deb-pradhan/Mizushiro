@@ -12,11 +12,11 @@ export const ValidationSlide = () => {
       
       <BentoGrid>
         {/* The Shocking Number */}
-        <BentoCell className="col-span-12 md:col-span-5 bg-accent-subtle/50 relative overflow-hidden border-l-4 border-l-accent-main">
+        <BentoCell className="col-span-12 md:col-span-5 bg-accent-subtle relative overflow-hidden border-l-4 border-l-accent-main">
           <div className="flex flex-col h-full justify-between">
             <div>
               <Label className="mb-4 text-accent-main">PYTH BORROW RATE</Label>
-              <div className="text-6xl md:text-8xl font-medium tracking-tighter leading-none mb-2 text-accent-main" style={{ textShadow: '0 0 60px rgba(155, 28, 28, 0.5)' }}>
+              <div className="text-6xl md:text-8xl font-medium tracking-tighter leading-none mb-2 text-accent-main">
                 45k%
               </div>
               <div className="text-2xl font-normal text-ink-secondary">APY SPIKE</div>
@@ -34,28 +34,18 @@ export const ValidationSlide = () => {
           <CardHeader title="PYTH BORROW RATE — 72 HOURS" />
           
           {/* Chart with spike */}
-          <div className="w-full h-48 mt-8 relative border-l-2 border-b-2 border-accent-main/50">
+          <div className="w-full h-48 mt-8 relative border-l-2 border-b-2 border-accent-main/30">
              {/* Grid lines */}
-             <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'linear-gradient(to right, #9B1C1C 1px, transparent 1px), linear-gradient(to bottom, #9B1C1C 1px, transparent 1px)', backgroundSize: '20% 25%' }}></div>
+             <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'linear-gradient(to right, var(--accent-main) 1px, transparent 1px), linear-gradient(to bottom, var(--accent-main) 1px, transparent 1px)', backgroundSize: '20% 25%' }}></div>
              
              <svg className="w-full h-full absolute inset-0" preserveAspectRatio="none" viewBox="0 0 100 100">
-                {/* Glow effect */}
-                <defs>
-                  <filter id="glow">
-                    <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-                    <feMerge>
-                      <feMergeNode in="coloredBlur"/>
-                      <feMergeNode in="SourceGraphic"/>
-                    </feMerge>
-                  </filter>
-                </defs>
-                <path d="M0,95 L15,95 L25,94 L35,92 L45,85 L50,20 L52,8 L55,15 L60,35 L70,50 L85,55 L100,58" vectorEffect="non-scaling-stroke" stroke="#9B1C1C" strokeWidth="3" fill="none" filter="url(#glow)" />
+                <path d="M0,95 L15,95 L25,94 L35,92 L45,85 L50,20 L52,8 L55,15 L60,35 L70,50 L85,55 L100,58" vectorEffect="non-scaling-stroke" stroke="var(--accent-main)" strokeWidth="3" fill="none" />
                 {/* Data points */}
-                <circle cx="52" cy="8" r="4" fill="#9B1C1C" />
+                <circle cx="52" cy="8" r="4" fill="var(--accent-main)" />
              </svg>
              
              <div className="absolute top-[8%] left-[52%] -translate-x-1/2 -translate-y-full pb-2">
-                <div className="bg-accent-main text-ink-on-accent px-4 py-2 text-xs font-medium whitespace-nowrap shadow-[0_0_20px_rgba(155,28,28,0.6)]">
+                <div className="bg-accent-main text-ink-on-accent px-4 py-2 text-xs font-medium whitespace-nowrap shadow-md">
                    SPIKE: 45,000% APY
                 </div>
                 <div className="w-px h-4 bg-accent-main mx-auto"></div>
@@ -67,7 +57,7 @@ export const ValidationSlide = () => {
              <span>Day 3</span>
           </div>
           
-          <div className="mt-8 grid grid-cols-2 gap-6 pt-6 border-t border-accent-main/50">
+          <div className="mt-8 grid grid-cols-2 gap-6 pt-6 border-t border-accent-main/30">
             <div>
               <Label className="font-medium text-accent-main mb-2">PRICE VOLATILITY</Label>
               <Body className="text-sm">PYTH doubled from <span className="text-accent-main">$0.115 → $0.23</span>, then crashed. Same day.</Body>

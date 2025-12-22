@@ -42,15 +42,15 @@ export const RoadmapSlide = () => {
         <BentoCell className="col-span-12 bg-surface-card">
           {/* Progress Line */}
           <div className="relative mb-8">
-            <div className="absolute top-4 left-0 right-0 h-1 bg-surface-subtle"></div>
-            <div className="absolute top-4 left-0 w-1/4 h-1 bg-accent-main shadow-[0_0_10px_rgba(155,28,28,0.5)]"></div>
+            <div className="absolute top-4 left-0 right-0 h-1 bg-border-grid"></div>
+            <div className="absolute top-4 left-0 w-1/4 h-1 bg-accent-main"></div>
             <div className="relative flex justify-between">
               {roadmap.map((phase, index) => (
                 <div key={index} className="flex flex-col items-center">
                   <div className={`
                     w-8 h-8 rounded-full flex items-center justify-center z-10 relative font-medium text-xs
                     ${phase.status === 'active' 
-                      ? 'bg-accent-main text-ink-on-accent shadow-[0_0_15px_rgba(155,28,28,0.8)]' 
+                      ? 'bg-accent-main text-ink-on-accent shadow-md' 
                       : phase.status === 'next'
                         ? 'bg-surface-card border-2 border-accent-main text-accent-main'
                         : 'bg-surface-subtle border border-border-grid text-ink-tertiary'
@@ -70,7 +70,7 @@ export const RoadmapSlide = () => {
                 key={index} 
                 className={`p-6 border transition-all hover:border-accent-main group ${
                   phase.status === 'active' 
-                    ? 'bg-accent-subtle/40 border-accent-main' 
+                    ? 'bg-accent-subtle border-accent-main' 
                     : phase.status === 'next'
                       ? 'bg-surface-subtle border-accent-main/50'
                       : 'bg-surface-subtle border-border-grid'
@@ -102,10 +102,10 @@ export const RoadmapSlide = () => {
         </BentoCell>
 
         {/* Bottom Stats */}
-        <BentoCell className="col-span-6 md:col-span-3 bg-accent-subtle/30 border-l-4 border-accent-main">
+        <BentoCell className="col-span-6 md:col-span-3 bg-accent-subtle border-l-4 border-accent-main">
           <Label className="mb-2 text-accent-main">CURRENT STATUS</Label>
           <div className="flex items-center gap-2 mt-3">
-            <span className="w-3 h-3 bg-accent-main animate-pulse rounded-full shadow-[0_0_10px_rgba(155,28,28,0.8)]"></span>
+            <span className="w-3 h-3 bg-accent-main animate-pulse rounded-full"></span>
             <span className="font-medium text-lg text-ink-primary">Pre-Launch</span>
           </div>
         </BentoCell>
@@ -131,4 +131,3 @@ export const RoadmapSlide = () => {
     </SlideSection>
   );
 };
-

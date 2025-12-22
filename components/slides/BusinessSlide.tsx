@@ -15,21 +15,21 @@ export const BusinessSlide = () => {
         <BentoCell className="col-span-12 md:col-span-6 bg-surface-card">
            <CardHeader title="REVENUE STREAMS" />
            <div className="mt-8 space-y-6">
-             <div className="flex gap-4 items-start group hover:bg-accent-subtle/30 p-4 -mx-4 transition-colors">
-               <div className="w-12 h-12 bg-accent-main text-ink-on-accent flex items-center justify-center font-medium text-lg shrink-0 shadow-[0_0_15px_rgba(155,28,28,0.4)]">1</div>
+             <div className="flex gap-4 items-start group hover:bg-accent-subtle p-4 -mx-4 transition-colors">
+               <div className="w-12 h-12 bg-accent-main text-ink-on-accent flex items-center justify-center font-medium text-lg shrink-0 shadow-md">1</div>
                <div>
                  <h3 className="font-medium text-xl mb-2 text-ink-primary group-hover:text-accent-main transition-colors">Interest Rate Spread</h3>
                  <Body className="text-sm">Protocol fee on all interest paid. Standard DeFi model, but on high-demand long-tail assets.</Body>
                </div>
              </div>
-             <div className="flex gap-4 items-start group hover:bg-accent-subtle/30 p-4 -mx-4 transition-colors">
+             <div className="flex gap-4 items-start group hover:bg-accent-subtle p-4 -mx-4 transition-colors">
                <div className="w-12 h-12 bg-accent-main/70 text-ink-on-accent flex items-center justify-center font-medium text-lg shrink-0">2</div>
                <div>
                  <h3 className="font-medium text-xl mb-2 text-ink-primary group-hover:text-accent-main transition-colors">Liquidation Fees</h3>
                  <Body className="text-sm">Revenue from maintaining protocol health. Higher volatility = more liquidations.</Body>
                </div>
              </div>
-             <div className="flex gap-4 items-start group hover:bg-accent-subtle/30 p-4 -mx-4 transition-colors">
+             <div className="flex gap-4 items-start group hover:bg-accent-subtle p-4 -mx-4 transition-colors">
                <div className="w-12 h-12 bg-accent-main/50 text-ink-on-accent flex items-center justify-center font-medium text-lg shrink-0">3</div>
                <div>
                  <h3 className="font-medium text-xl mb-2 text-ink-primary group-hover:text-accent-main transition-colors">Premium Yield Vaults</h3>
@@ -82,7 +82,7 @@ export const BusinessSlide = () => {
         </BentoCell>
         
         {/* Bottom: Why we win */}
-        <BentoCell className="col-span-12 bg-accent-subtle/30 border-t-4 border-accent-main">
+        <BentoCell className="col-span-12 bg-accent-subtle border-t-4 border-accent-main">
           <div className="flex flex-col md:flex-row md:items-center gap-8">
             <div className="flex-1">
               <Label className="text-accent-main font-medium mb-2">THE ADVANTAGE</Label>
@@ -95,7 +95,7 @@ export const BusinessSlide = () => {
               </div>
               <div className="text-accent-main self-center text-2xl">vs</div>
               <div>
-                <div className="text-3xl font-medium text-accent-main mb-1" style={{ textShadow: '0 0 20px rgba(155, 28, 28, 0.4)' }}>Up to 40%</div>
+                <div className="text-3xl font-medium text-accent-main mb-1">Up to 40%</div>
                 <div className="text-xs text-accent-main uppercase tracking-wider">Long-tail rates</div>
               </div>
             </div>

@@ -12,10 +12,10 @@ export const MarketSlide = () => {
 
       <BentoGrid>
          {/* Market 1: Crypto Long Tail */}
-         <BentoCell className="col-span-12 md:col-span-4 bg-accent-subtle/50 border-l-4 border-l-accent-main">
+         <BentoCell className="col-span-12 md:col-span-4 bg-accent-subtle border-l-4 border-l-accent-main">
             <div className="h-full flex flex-col">
                <Label className="mb-2 text-accent-main">MARKET 1: TODAY</Label>
-               <div className="text-5xl md:text-7xl font-medium tracking-tighter mb-4 text-accent-main" style={{ textShadow: '0 0 40px rgba(155, 28, 28, 0.4)' }}>$3T</div>
+               <div className="text-5xl md:text-7xl font-medium tracking-tighter mb-4 text-accent-main">$3T</div>
                <DataHuge className="block mb-4">Crypto Long-Tail</DataHuge>
                <Body className="mb-8 text-sm">
                  Small and mid-cap tokens with zero lending access. PYTH, JUP, WIF, and thousands more.
@@ -46,7 +46,7 @@ export const MarketSlide = () => {
             <CardHeader title="MIZUSHIRO'S COMBINED TAM" />
             <div className="flex-1 flex items-center justify-center py-8">
                <div className="relative w-64 h-48 flex items-center justify-center">
-                  <div className="absolute left-4 top-4 w-32 h-32 rounded-full border-4 border-accent-main bg-accent-main flex items-center justify-center z-10 shadow-[0_0_40px_rgba(155,28,28,0.6)]">
+                  <div className="absolute left-4 top-4 w-32 h-32 rounded-full border-4 border-accent-main bg-accent-main flex items-center justify-center z-10 shadow-xl">
                      <span className="text-ink-on-accent font-medium text-xl">$3T</span>
                   </div>
                   <div className="absolute right-0 bottom-0 w-40 h-40 rounded-full border-2 border-dashed border-ink-tertiary bg-surface-card flex items-center justify-center z-0 opacity-60">
@@ -55,7 +55,7 @@ export const MarketSlide = () => {
                </div>
             </div>
             <div className="text-center mt-4">
-               <div className="text-5xl font-medium text-accent-main tracking-tighter" style={{ textShadow: '0 0 30px rgba(155, 28, 28, 0.4)' }}>$19T</div>
+               <div className="text-5xl font-medium text-accent-main tracking-tighter">$19T</div>
                <Label className="mt-2">Combined Addressable Market</Label>
             </div>
          </BentoCell>
@@ -64,22 +64,22 @@ export const MarketSlide = () => {
          <BentoCell className="col-span-12 bg-surface-card">
             <CardHeader title="WHY THIS GROWS" />
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-6">
-               <div className="group hover:bg-accent-subtle/30 p-4 -m-4 transition-colors">
+               <div className="group hover:bg-accent-subtle p-4 -m-4 transition-colors">
                   <div className="w-2 h-2 bg-accent-main mb-3"></div>
                   <div className="font-medium text-ink-primary mb-1 text-lg group-hover:text-accent-main transition-colors">DeFi Adoption</div>
                   <p className="text-xs text-ink-secondary uppercase tracking-wide">TVL grows with crypto adoption</p>
                </div>
-               <div className="group hover:bg-accent-subtle/30 p-4 -m-4 transition-colors">
+               <div className="group hover:bg-accent-subtle p-4 -m-4 transition-colors">
                   <div className="w-2 h-2 bg-accent-main mb-3"></div>
                   <div className="font-medium text-ink-primary mb-1 text-lg group-hover:text-accent-main transition-colors">RWA Tokenization</div>
                   <p className="text-xs text-ink-secondary uppercase tracking-wide">$10T+ projected by 2030</p>
                </div>
-               <div className="group hover:bg-accent-subtle/30 p-4 -m-4 transition-colors">
+               <div className="group hover:bg-accent-subtle p-4 -m-4 transition-colors">
                   <div className="w-2 h-2 bg-accent-main mb-3"></div>
                   <div className="font-medium text-ink-primary mb-1 text-lg group-hover:text-accent-main transition-colors">Long-Tail Growth</div>
                   <p className="text-xs text-ink-secondary uppercase tracking-wide">Small caps &gt; blue chips</p>
                </div>
-               <div className="group hover:bg-accent-subtle/30 p-4 -m-4 transition-colors">
+               <div className="group hover:bg-accent-subtle p-4 -m-4 transition-colors">
                   <div className="w-2 h-2 bg-accent-main mb-3"></div>
                   <div className="font-medium text-ink-primary mb-1 text-lg group-hover:text-accent-main transition-colors">Institutional Demand</div>
                   <p className="text-xs text-ink-secondary uppercase tracking-wide">Yield product interest</p>

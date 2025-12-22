@@ -7,9 +7,9 @@ export const ClosingSlide = () => {
     <SlideSection id="closing">
       <BentoGrid>
         {/* Hero CTA */}
-        <BentoCell className="col-span-12 !bg-accent-main text-ink-on-accent min-h-[50vh] flex flex-col justify-center items-center text-center shadow-[0_0_80px_rgba(155,28,28,0.4)]">
+        <BentoCell className="col-span-12 !bg-accent-main text-ink-on-accent min-h-[50vh] flex flex-col justify-center items-center text-center shadow-xl">
           <Label className="!text-white/60 mb-4 tracking-[0.3em]">THE FUTURE OF DEFI LENDING</Label>
-          <h1 className="text-4xl md:text-6xl font-medium tracking-tight mb-6" style={{ textShadow: '0 0 40px rgba(255, 255, 255, 0.3)' }}>
+          <h1 className="text-4xl md:text-6xl font-medium tracking-tight mb-6">
             Ready to unlock the long tail?
           </h1>
           <Body className="!text-white/80 max-w-2xl text-lg mb-10">
@@ -31,15 +31,15 @@ export const ClosingSlide = () => {
           <DataHuge className="block mb-6 text-ink-primary">Let's build together.</DataHuge>
           
           <div className="space-y-4">
-            <a href="mailto:vasyl@mizushiro.xyz" className="flex items-center gap-4 p-4 bg-surface-subtle border border-border-grid hover:border-accent-main hover:bg-accent-subtle/30 transition-all group">
-              <span className="w-12 h-12 bg-accent-main flex items-center justify-center text-ink-on-accent text-xl shadow-[0_0_15px_rgba(155,28,28,0.4)]">@</span>
+            <a href="mailto:vasyl@mizushiro.xyz" className="flex items-center gap-4 p-4 bg-surface-subtle border border-border-grid hover:border-accent-main hover:bg-accent-subtle transition-all group">
+              <span className="w-12 h-12 bg-accent-main flex items-center justify-center text-ink-on-accent text-xl shadow-md">@</span>
               <div>
                 <div className="font-medium text-ink-primary group-hover:text-accent-main transition-colors">Email</div>
                 <div className="font-mono text-sm text-ink-secondary">vasyl@mizushiro.xyz</div>
               </div>
             </a>
             
-            <a href="#" className="flex items-center gap-4 p-4 bg-surface-subtle border border-border-grid hover:border-accent-main hover:bg-accent-subtle/30 transition-all group">
+            <a href="#" className="flex items-center gap-4 p-4 bg-surface-subtle border border-border-grid hover:border-accent-main hover:bg-accent-subtle transition-all group">
               <span className="w-12 h-12 bg-surface-card border-2 border-accent-main flex items-center justify-center text-accent-main text-xl">𝕏</span>
               <div>
                 <div className="font-medium text-ink-primary group-hover:text-accent-main transition-colors">Twitter / X</div>
@@ -47,7 +47,7 @@ export const ClosingSlide = () => {
               </div>
             </a>
             
-            <a href="#" className="flex items-center gap-4 p-4 bg-surface-subtle border border-border-grid hover:border-accent-main hover:bg-accent-subtle/30 transition-all group">
+            <a href="#" className="flex items-center gap-4 p-4 bg-surface-subtle border border-border-grid hover:border-accent-main hover:bg-accent-subtle transition-all group">
               <span className="w-12 h-12 bg-surface-card border-2 border-accent-main flex items-center justify-center text-accent-main text-xl">◈</span>
               <div>
                 <div className="font-medium text-ink-primary group-hover:text-accent-main transition-colors">Discord</div>
@@ -62,19 +62,19 @@ export const ClosingSlide = () => {
           <Label className="text-ink-secondary mb-4">RESOURCES</Label>
           
           <div className="grid grid-cols-2 gap-4 mb-6">
-            <a href="#" className="p-4 bg-surface-card border border-border-grid hover:border-accent-main transition-all text-center group">
+            <a href="#" className="p-4 bg-surface-card border border-border-grid hover:border-accent-main hover:bg-accent-subtle transition-all text-center group">
               <div className="text-2xl mb-2">📄</div>
               <div className="font-medium text-sm text-ink-primary group-hover:text-accent-main transition-colors">Whitepaper</div>
             </a>
-            <a href="#" className="p-4 bg-surface-card border border-border-grid hover:border-accent-main transition-all text-center group">
+            <a href="#" className="p-4 bg-surface-card border border-border-grid hover:border-accent-main hover:bg-accent-subtle transition-all text-center group">
               <div className="text-2xl mb-2">📚</div>
               <div className="font-medium text-sm text-ink-primary group-hover:text-accent-main transition-colors">Documentation</div>
             </a>
-            <a href="#" className="p-4 bg-surface-card border border-border-grid hover:border-accent-main transition-all text-center group">
+            <a href="#" className="p-4 bg-surface-card border border-border-grid hover:border-accent-main hover:bg-accent-subtle transition-all text-center group">
               <div className="text-2xl mb-2">💻</div>
               <div className="font-medium text-sm text-ink-primary group-hover:text-accent-main transition-colors">GitHub</div>
             </a>
-            <a href="#" className="p-4 bg-surface-card border border-border-grid hover:border-accent-main transition-all text-center group">
+            <a href="#" className="p-4 bg-surface-card border border-border-grid hover:border-accent-main hover:bg-accent-subtle transition-all text-center group">
               <div className="text-2xl mb-2">📊</div>
               <div className="font-medium text-sm text-ink-primary group-hover:text-accent-main transition-colors">Analytics</div>
             </a>

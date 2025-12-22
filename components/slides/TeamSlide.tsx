@@ -12,8 +12,8 @@ export const TeamSlide = () => {
 
       <BentoGrid className="h-auto">
          {/* Core Team */}
-         <BentoCell className="col-span-12 md:col-span-4 bg-surface-card group hover:bg-accent-subtle/20 transition-colors">
-            <div className="w-20 h-20 bg-accent-main mb-4 flex items-center justify-center text-ink-on-accent text-2xl font-medium shadow-[0_0_20px_rgba(155,28,28,0.4)] group-hover:shadow-[0_0_30px_rgba(155,28,28,0.6)] transition-shadow">
+         <BentoCell className="col-span-12 md:col-span-4 bg-surface-card group hover:bg-accent-subtle transition-colors">
+            <div className="w-20 h-20 bg-accent-main mb-4 flex items-center justify-center text-ink-on-accent text-2xl font-medium shadow-md">
                VK
             </div>
             <h3 className="font-medium text-xl text-ink-primary group-hover:text-accent-main transition-colors">Vasyl Kyryliuk</h3>
@@ -23,7 +23,7 @@ export const TeamSlide = () => {
               <span className="text-xs text-ink-tertiary">Gateway.fm • Web3 BD</span>
             </div>
          </BentoCell>
-         <BentoCell className="col-span-12 md:col-span-4 bg-surface-card group hover:bg-accent-subtle/20 transition-colors">
+         <BentoCell className="col-span-12 md:col-span-4 bg-surface-card group hover:bg-accent-subtle transition-colors">
             <div className="w-20 h-20 bg-accent-main/70 mb-4 flex items-center justify-center text-ink-on-accent text-2xl font-medium">
                OK
             </div>
@@ -34,7 +34,7 @@ export const TeamSlide = () => {
               <span className="text-xs text-ink-tertiary">PhD Finance • 7yr Web3</span>
             </div>
          </BentoCell>
-         <BentoCell className="col-span-12 md:col-span-4 bg-surface-card group hover:bg-accent-subtle/20 transition-colors">
+         <BentoCell className="col-span-12 md:col-span-4 bg-surface-card group hover:bg-accent-subtle transition-colors">
             <div className="w-20 h-20 bg-accent-main/50 mb-4 flex items-center justify-center text-ink-on-accent text-2xl font-medium">
                AS
             </div>
@@ -50,23 +50,23 @@ export const TeamSlide = () => {
          <BentoCell className="col-span-12 md:col-span-8 bg-surface-subtle">
             <CardHeader title="ADVISORS & SUPPORTERS" />
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
-              <div className="bg-surface-card p-4 border border-border-grid hover:border-accent-main hover:bg-accent-subtle/20 transition-all group">
+              <div className="bg-surface-card p-4 border border-border-grid hover:border-accent-main hover:bg-accent-subtle transition-all group">
                 <div className="font-medium text-sm text-ink-primary group-hover:text-accent-main transition-colors">Thomas</div>
                 <div className="text-xs text-ink-secondary mt-1">Marketing & Community</div>
               </div>
-              <div className="bg-surface-card p-4 border border-border-grid hover:border-accent-main hover:bg-accent-subtle/20 transition-all group">
+              <div className="bg-surface-card p-4 border border-border-grid hover:border-accent-main hover:bg-accent-subtle transition-all group">
                 <div className="font-medium text-sm text-ink-primary group-hover:text-accent-main transition-colors">James</div>
                 <div className="text-xs text-ink-secondary mt-1">LP Support</div>
               </div>
-              <div className="bg-surface-card p-4 border border-border-grid hover:border-accent-main hover:bg-accent-subtle/20 transition-all group">
+              <div className="bg-surface-card p-4 border border-border-grid hover:border-accent-main hover:bg-accent-subtle transition-all group">
                 <div className="font-medium text-sm text-ink-primary group-hover:text-accent-main transition-colors">Dmitri</div>
                 <div className="text-xs text-ink-secondary mt-1">Prom Network • Liquidity</div>
               </div>
-              <div className="bg-surface-card p-4 border border-border-grid hover:border-accent-main hover:bg-accent-subtle/20 transition-all group">
+              <div className="bg-surface-card p-4 border border-border-grid hover:border-accent-main hover:bg-accent-subtle transition-all group">
                 <div className="font-medium text-sm text-ink-primary group-hover:text-accent-main transition-colors">Deb</div>
                 <div className="text-xs text-ink-secondary mt-1">Marketing & Ecosystem</div>
               </div>
-              <div className="bg-surface-card p-4 border border-border-grid hover:border-accent-main hover:bg-accent-subtle/20 transition-all group">
+              <div className="bg-surface-card p-4 border border-border-grid hover:border-accent-main hover:bg-accent-subtle transition-all group">
                 <div className="font-medium text-sm text-ink-primary group-hover:text-accent-main transition-colors">Chirdeep</div>
                 <div className="text-xs text-ink-secondary mt-1">Partnerships & Strategy</div>
               </div>
@@ -74,7 +74,7 @@ export const TeamSlide = () => {
          </BentoCell>
          
          {/* Why this team */}
-         <BentoCell className="col-span-12 md:col-span-4 bg-accent-subtle/30 border-l-4 border-accent-main">
+         <BentoCell className="col-span-12 md:col-span-4 bg-accent-subtle border-l-4 border-accent-main">
             <div className="h-full flex flex-col justify-between">
               <div>
                 <Label className="mb-2 text-accent-main">WHY US</Label>

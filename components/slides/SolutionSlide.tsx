@@ -20,11 +20,11 @@ export const SolutionSlide = () => {
                 <span className="text-sm text-ink-secondary font-mono">Available: 4,023 PYTH</span>
              </div>
              <div className="flex gap-3 mb-6">
-               <div className="flex-1 border-2 border-accent-main p-4 bg-surface-card flex justify-between items-center shadow-[0_0_15px_rgba(155,28,28,0.2)]">
+               <div className="flex-1 border-2 border-accent-main p-4 bg-surface-card flex justify-between items-center shadow-md">
                  <span className="text-2xl font-medium text-accent-main">1,000</span>
                  <span className="font-medium bg-accent-subtle px-3 py-1 text-xs tracking-wide border border-accent-main text-accent-main">PYTH</span>
                </div>
-               <button className="w-16 flex items-center justify-center border-2 border-accent-main bg-surface-card text-sm font-medium cursor-pointer hover:bg-accent-main hover:text-ink-on-accent transition-all text-accent-main hover:shadow-[0_0_20px_rgba(155,28,28,0.4)]">
+               <button className="w-16 flex items-center justify-center border-2 border-accent-main bg-surface-card text-sm font-medium cursor-pointer hover:bg-accent-main hover:text-ink-on-accent transition-all text-accent-main">
                  MAX
                </button>
              </div>
@@ -40,7 +40,7 @@ export const SolutionSlide = () => {
                  <span className="text-ink-primary font-medium">Arbitrum</span>
                </div>
              </div>
-             <button className="w-full bg-accent-main text-ink-on-accent py-4 font-medium hover:bg-accent-hover transition-all cursor-pointer text-sm tracking-widest uppercase hover:shadow-[0_0_30px_rgba(155,28,28,0.5)]">
+             <button className="w-full bg-accent-main text-ink-on-accent py-4 font-medium hover:bg-accent-hover transition-all cursor-pointer text-sm tracking-widest uppercase shadow-md hover:shadow-lg">
                DEPOSIT & EARN
              </button>
           </div>
@@ -52,17 +52,17 @@ export const SolutionSlide = () => {
         {/* Key Differentiators */}
         <BentoCell className="col-span-12 md:col-span-5 flex flex-col justify-center">
            <div className="flex-1 flex flex-col gap-6 justify-center">
-             <div className="border-l-4 border-accent-main pl-6 py-2 hover:bg-accent-subtle/30 transition-colors">
+             <div className="border-l-4 border-accent-main pl-6 py-2 hover:bg-accent-subtle transition-colors">
                <DataLarge className="block mb-2 text-accent-main">300+ Assets</DataLarge>
                <Body className="text-sm">Every trending token, from day one. Not just blue chips.</Body>
              </div>
              
-             <div className="border-l-4 border-accent-main pl-6 py-2 hover:bg-accent-subtle/30 transition-colors">
+             <div className="border-l-4 border-accent-main pl-6 py-2 hover:bg-accent-subtle transition-colors">
                <DataLarge className="block mb-2 text-accent-main">10+ Chains</DataLarge>
                <Body className="text-sm">True omnichain via AggLayer. No manual bridging.</Body>
              </div>
              
-             <div className="border-l-4 border-accent-main pl-6 py-2 hover:bg-accent-subtle/30 transition-colors">
+             <div className="border-l-4 border-accent-main pl-6 py-2 hover:bg-accent-subtle transition-colors">
                <DataLarge className="block mb-2 text-accent-main">50% Liquidations</DataLarge>
                <Body className="text-sm">Partial liquidations, not instant 100% wipeouts.</Body>
              </div>

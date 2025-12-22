@@ -1,33 +1,33 @@
 @import "tailwindcss";
 
 :root {
-  /* Surface (Charcoal Scale) */
-  --surface-canvas: #0A0A0A;
-  --surface-card: #141414;
-  --surface-subtle: #1C1C1C;
-  --surface-elevated: #242424;
+  /* Surface (Light Scale) */
+  --surface-canvas: #FAFAFA;
+  --surface-card: #FFFFFF;
+  --surface-subtle: #F5F5F5;
+  --surface-elevated: #FFFFFF;
 
-  /* Ink (Light on Dark) */
-  --ink-primary: #F5F5F5;
-  --ink-secondary: #A3A3A3;
-  --ink-tertiary: #666666;
+  /* Ink (Dark on Light) */
+  --ink-primary: #0A0A0A;
+  --ink-secondary: #525252;
+  --ink-tertiary: #A3A3A3;
   --ink-on-accent: #FFFFFF;
 
-  /* Accent (Dark Red) */
-  --accent-main: #9B1C1C;
-  --accent-hover: #B52525;
-  --accent-subtle: #2A1515;
-  --accent-glow: rgba(155, 28, 28, 0.3);
+  /* Accent (Rich Red - slightly darker for light mode contrast) */
+  --accent-main: #991B1B;
+  --accent-hover: #7F1D1D;
+  --accent-subtle: #FEF2F2;
+  --accent-glow: rgba(153, 27, 27, 0.15);
 
   /* Functional Signals */
-  --signal-error: #EF4444;
-  --signal-warning: #F59E0B;
-  --signal-success: #10B981;
+  --signal-error: #DC2626;
+  --signal-warning: #D97706;
+  --signal-success: #059669;
 
   /* Borders */
-  --border-grid: #2A2A2A;
-  --border-element: #363636;
-  --border-accent: #9B1C1C;
+  --border-grid: #E5E5E5;
+  --border-element: #D4D4D4;
+  --border-accent: #991B1B;
 }
 
 @theme inline {
